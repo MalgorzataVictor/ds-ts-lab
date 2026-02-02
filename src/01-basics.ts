@@ -57,7 +57,12 @@ const colleague3: Colleague = {
     },
 };
 
-const colleagues = {
+interface ColleagueHistory {
+    current: Colleague[];
+    former: Colleague[];
+}
+
+export const colleagues: ColleagueHistory = {
     current: [colleague1, colleague2, colleague3],
     former: [],
 };
