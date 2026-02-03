@@ -49,3 +49,10 @@ export type BuddyList = {
 };
 
 
+export type FriendPartial = Partial<Friend>
+export type EventPass = Omit<Colleague, "contact"> & {
+  passCode : number;
+}
+
+export type SecureFriendContact = Readonly<Pick<Friend,"name" | "phone" > >
+
